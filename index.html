@@ -4,34 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <!-- libraries -->
     <link rel="stylesheet" href="css/vendors/all.min.css">
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <!-- main style sheet -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- icon -->
+    <link rel="icon" href="img/logo.png">
+    <!-- title -->
+    <title>Confer - Homepage</title>
+
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-logo">
-                    
-                </div>
-                <div class="col-menu">
-                    <ul>
-                        <li class="special">Home</li>
-                        <li>Pages</li>
-                        <li>speakers</li>
-                        <li>blog</li>
-                        <li>contact</li>
-                    </ul>
-                </div>
-                <button class="btn">
-                    tickets<i class="fa-solid fa-arrow-right-long"></i>
-                </button>
+    <!-- main nav -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link here" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+    <!-- offcanvas -->
+    <button class="offcanvTrigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <img src="img/logo.png" alt="">
+            <button type="button" class="closeOff float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link here" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">speakers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!-- home -->
     <section class="home">
         <div class="overlay"></div>
@@ -80,7 +121,7 @@
             </div>
         </div>
     </section>
-<!-- speak -->
+    <!-- speak -->
     <section class="our-speakings">
         <div class="container">
             <div class="overlay"></div>
@@ -191,7 +232,7 @@
                 view all Speaker<i class="fa-solid fa-arrow-right-long"></i>
             </button></div>
     </section>
-<!-- time -->
+    <!-- time -->
     <section class="our-timetable">
         <div class="container">
             <div class="header">
@@ -287,7 +328,7 @@
             </div>
         </div>
     </section>
-<!-- tickets -->
+    <!-- tickets -->
     <section class="tickets">
         <div class="container">
             <div class="header">
@@ -358,7 +399,7 @@
             </div>
         </div>
     </section>
-<!-- spons -->
+    <!-- spons -->
     <section class="sponsers">
         <div class="container">
             <div class="header">
@@ -443,7 +484,7 @@
             </div>
         </div>
     </section>
-<!-- blog -->
+    <!-- blog -->
     <section class="blog">
         <div class="container">
             <div class="header">
@@ -499,7 +540,7 @@
             </div>
         </div>
     </section>
-<!-- contact -->
+    <!-- contact -->
     <section class="contact">
         <div class="container">
             <div class="header">
@@ -538,7 +579,7 @@
             </div>
         </div>
     </section>
-<!-- footer -->
+    <!-- footer -->
     <section class="footer">
         <div class="container">
             <div class="top">
@@ -607,6 +648,11 @@
             </div>
         </div>
     </section>
+
+
+    <!-- js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
