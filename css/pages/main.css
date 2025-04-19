@@ -1,0 +1,127 @@
+/* import */
+@import url(../base/animations.css);
+@import url(../base/responsive.css);
+
+/* global */
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Verdana;
+  box-sizing: border-box;
+  text-transform: capitalize !important;
+}
+
+img {
+  width: 100%;
+}
+
+/* main navbar */
+.navbar {
+  background-color: #151853 !important;
+  padding: 10px 0px;
+  position: sticky;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  box-shadow: 0 0 15px #c63fa4;
+  z-index: 111;
+
+  .collapse {
+    justify-content: center;
+
+    .navbar-nav {
+      .nav-item {
+        margin: 0px 10px;
+        .nav-link {
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #c63fa4;
+            margin: 0px 10px;
+          }
+        }
+        .here {
+          color: #c63fa4;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+/* offcanvas */
+.offcanvTrigger {
+  display: none;
+  background-color: transparent !important;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  z-index: 111;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  i {
+    color: #fff;
+  }
+}
+
+.offcanvas {
+  background-color: #151853;
+  backdrop-filter: blur(10px);
+
+  .offcanvas-header {
+    justify-content: space-between;
+    img {
+      width: 50%;
+    }
+    .closeOff {
+      background-color: transparent;
+      border: none;
+
+      i {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .offcanvas-body {
+    .nav-list {
+      list-style: none;
+      .nav-item {
+        margin: 20px 0px;
+        .nav-link {
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #c63fa4;
+          }
+        }
+        .here {
+          color: #c63fa4;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+/* main */
+/* about */
+.about {
+  justify-content: center;
+  align-items: center;
+  background-color: #151853;
+  padding: 50px 0px;
+
+  .textContent {
+    color: #fff;
+
+    h6 {
+      color: #c63fa4;
+    }
+  }
+}
