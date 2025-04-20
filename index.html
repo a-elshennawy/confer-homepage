@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
     <!-- main style sheet -->
     <link rel="stylesheet" href="css/pages/main.css">
+    <!-- icon -->
+    <link rel="icon" href="img/icon.png">
     <!-- title -->
     <title>Confer - Homepage</title>
 </head>
 
 <body>
     <!-- navbars -->
+
     <!-- main nav -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -24,21 +27,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link here" href="#">Home</a>
+                        <a class="nav-link here" href="#about">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">speakers</a>
+                        <a class="nav-link" href="#ourSpeakings">speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">blog</a>
+                        <a class="nav-link" href="#blog">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- offcanvas -->
     <button class="offcanvTrigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
         aria-controls="offcanvasScrolling">
@@ -55,16 +59,16 @@
         <div class="offcanvas-body">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-link here" href="#">Home</a>
+                    <a class="nav-link here" href="#about">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">speakers</a>
+                    <a class="nav-link" href="#ourSpeakings">speakers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">blog</a>
+                    <a class="nav-link" href="#blog">blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="#contact">contact</a>
                 </li>
             </ul>
         </div>
@@ -76,7 +80,7 @@
         <!-- about -->
         <section>
             <div class="container-fluid">
-                <div class="mainSec about row">
+                <div id="about" class="mainSec about row">
                     <div class="overlay"></div>
                     <div class="textContent col-6">
                         <h6>About Conference</h6>
@@ -99,7 +103,7 @@
         <!-- speak -->
         <section>
             <div class="container-fluid">
-                <div class="mainSec ourSpeakings row">
+                <div id="ourSpeakings" class="mainSec ourSpeakings row">
                     <div class="overlay"></div>
                     <div class="header col-12">
                         <p>our Speakings</p>
@@ -428,7 +432,7 @@
         <!-- blog -->
         <section>
             <div class="container-fluid">
-                <div class="mainSec blog row">
+                <div id="blog" class="mainSec blog row">
                     <div class="overlay"></div>
                     <div class="header col-12">
                         <p>Our Blog</p>
@@ -488,7 +492,7 @@
         <!-- contact -->
         <section>
             <div class="container-fluid">
-                <div class="mainSec contact row">
+                <div id="contact" class="mainSec contact row">
                     <div class="header col-12">
                         <p>Have Question?</p>
                         <h4>Contact us</h4>
