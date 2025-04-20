@@ -52,6 +52,7 @@ img {
   border-radius: 50px;
   background-color: #ff55d4;
   z-index: 111;
+  transition: all 0.3s ease-in-out;
 
   i {
     color: #fff;
@@ -91,7 +92,8 @@ img {
 
 /* main navbar */
 .navbar {
-  background-color: #000000bd !important;
+  background-color: #151853;
+  backdrop-filter: blur(10px);
   padding: 20px 0px;
   position: sticky;
   top: 0%;
@@ -99,6 +101,7 @@ img {
   left: 0%;
   box-shadow: 0 0 30px #c63fa4;
   z-index: 111;
+  transition: all 0.3s ease-in-out;
 
   .collapse {
     justify-content: center;
@@ -231,6 +234,9 @@ img {
       border: none;
       cursor: pointer;
       position: relative;
+      animation: fadeAppear_side linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0%;
 
       .img {
         overflow: hidden;
@@ -339,6 +345,9 @@ img {
       padding: 0px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      animation: scroll linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0%;
 
       .info {
         justify-content: start;
@@ -411,6 +420,9 @@ img {
       height: fit-content;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      animation: fadeAppear linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0%;
 
       .plan {
         position: absolute;
@@ -516,6 +528,9 @@ img {
       overflow: hidden;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      animation: fadeAppear_side_2 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0%;
 
       .img {
         padding: 0;
@@ -551,6 +566,9 @@ img {
   .contactInsider {
     justify-content: center;
     align-items: center;
+    animation: fadeAppear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0%;
 
     .contactForm {
       border-radius: 10px;
