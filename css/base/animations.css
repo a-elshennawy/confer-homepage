@@ -78,3 +78,15 @@
     transform: translateX(0px);
   }
 }
+
+@keyframes upArrow {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 8%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}

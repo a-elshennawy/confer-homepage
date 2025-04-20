@@ -53,6 +53,7 @@ img {
   background-color: #ff55d4;
   z-index: 111;
   transition: all 0.3s ease-in-out;
+  animation: upArrow 1s infinite;
 
   i {
     color: #fff;
@@ -92,7 +93,7 @@ img {
 
 /* main navbar */
 .navbar {
-  background-color: #151853;
+  background-color: #000;
   backdrop-filter: blur(10px);
   padding: 20px 0px;
   position: sticky;
