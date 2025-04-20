@@ -1,4 +1,4 @@
-@keyframes flash {
+@keyframes btnArrowFlash {
   0% {
     opacity: 1;
   }
@@ -9,5 +9,27 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes pinkGlow {
+  0% {
+    box-shadow: 0 0 10px #ff55d4;
+  }
+
+  30% {
+    box-shadow: 0 0 20px #ff55d4;
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ff55d4;
+  }
+
+  70% {
+    box-shadow: 0 0 20px #ff55d4;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #ff55d4;
   }
 }
