@@ -1,0 +1,52 @@
+@media screen and (min-width: 992px) {
+  .offcanvTrigger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .offcanvTrigger {
+    display: block;
+  }
+
+  .timetable {
+    .secs {
+      .sec {
+        justify-content: center !important;
+
+        .info {
+          justify-content: center !important;
+          text-align: center !important;
+        }
+
+        .btnContain {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
